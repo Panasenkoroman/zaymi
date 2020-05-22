@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Все займы</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/rangeslider.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo" id="abtn">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <div class="header__menu-btn">
+                <span></span>
+            </div>
+            <ul class="header__menu">
+                <li class="drop-down">
+                    Срок займа
+                    <div class="drop__down-list-wrapper">
+                        <ul class="drop__down-list">
+                            <li>
+                                <a href="#">
+                                    10 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    15 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    50 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    от 100 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    от 500 000 рублей
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="drop-down">
+                    Сумма займа
+                    <div class="drop__down-list-wrapper">
+                        <ul class="drop__down-list">
+                            <li>
+                                <a href="#">
+                                    10 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    15 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    50 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    от 100 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    от 500 000 рублей
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="drop-down">
+                    Способ получения
+                    <div class="drop__down-list-wrapper">
+                        <ul class="drop__down-list">
+                            <li>
+                                <a href="#">
+                                    10 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    15 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    50 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    от 100 000 рублей
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    от 500 000 рублей
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        Условия
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Возраст заемщика
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="top">
+        <div class="container">
+            <img class="top-foto" src="images/content/top-foto.png" alt="">
+            <div class="calculator">
+                <div class="calculator__title title">
+                    Калькулятор займов
+                </div>
+                <div class="calculator__item">
+                    <div class="calculator__item-title">
+                        Сколько денег нужно?
+                    </div>
+                    <input class="calculator__summ" type="text" value="50 000">
+                    <input type="range" id="price" min="10000" max="500000" value="50000" step="1000">
+                </div>
+                <div class="calculator__item">
+                    <div class="calculator__item-title">
+                        На какой срок берете?
+                    </div>
+                    <input class="calculator__term" type="text" value="На 8 дней">
+                    <input type="range" id="term" min="7" max="54.67" value="8" step="1">
+                </div>
+                <div class="calculator__item">
+                    <div class="calculator__item-title">
+                        Выберите способ получения:
+                    </div>
+                    <div class="calculator__item-checkbox">
+                        <label><input type="radio" name="r" value="1">Банковская карта</label>
+                        <label><input type="radio" name="r" value="2">Наличные</label>
+                        <label><input type="radio" name="r" value="3">QIWI</label>
+                        <label><input type="radio" name="r" value="4">Яндекс.Деньги</label>
+                        <label><input type="radio" name="r" value="5">Банковский счет</label>
+                        <label><input type="radio" name="r" value="6">Банковский перевод</label>
+                    </div>
+                    <div class="calculator__item-summ">
+                        <div class="calculator__item-summ-box">
+                            <div class="calculator__item-title">
+                                Вы берете:
+                            </div>
+                            <div class="calculator__item-summ-price you-take">
+                                1 000 000 ₽
+                            </div>
+                        </div>
+                        <div class="calculator__item-summ-box">
+                            <div class="calculator__item-title">
+                                Вы отдаете:
+                            </div>
+                            <div class="calculator__item-summ-price you-give">
+                                1 500 000 ₽
+                            </div>
+                        </div>
+                        <div class="calculator__item-summ-box">
+                            <div class="calculator__item-title">
+                                Комиссия:
+                            </div>
+                            <div class="calculator__item-summ-price your-commission">
+                                500 000 ₽
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="link open-popup">
+                        Подобрать займ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages">
+        <div class="container">
+            <div class="title">
+                Получить займ ещё не было так просто!
+            </div>
+            <div class="advantages__item">
+                <img src="images/icons/advantages-img-1.svg" alt="">
+                <div class="advantages__item-title">
+                    Оформите заявку
+                    <div class="advantages__item-subtitle">
+                        Заполните заявку на займ: укажите желаемую сумму займа и его срок. Максимальная сумма займа
+                        <span>70 000 рублей</span>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <img src="images/icons/advantages-img-2.svg" alt="">
+                <div class="advantages__item-title">
+                    Ожидайте решение
+                    <div class="advantages__item-subtitle">
+                        Процесс рассмотрения займет <span> не более 5 минут </span> но в среднем, мы рассматриваем
+                        заявку за 3
+                        минуты
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <img src="images/icons/advantages-img-3.svg" alt="">
+                <div class="advantages__item-title">
+                    Получите деньги
+                    <div class="advantages__item-subtitle">
+                        Деньги <span> поступят через 15 минут</span>, с помощью выбранного вами способа получения при
+                        оформлении заявки
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="popular-loans">
+        <div class="container">
+            <div class="block-title">
+                <div class="title">
+                    Популярные займы
+                </div>
+                <div class="sorting">
+                    <p>
+                        Сортировать по:
+                    </p>
+                    <select class="select-beast">
+                        <option>С высоким рейтингом</option>
+                        <option>С низким рейтингом</option>
+                        <option>Самые свежие</option>
+                        <option>Старые</option>
+                    </select>
+                </div>
+            </div>
+            <div class="popular-loans__inner" id="popular-loans">
+                <div class="popular-loans__item item">
+                    <div class="item__logo">
+                        <img src="images/content/loans-item-1.svg" alt="">
+                        <div class="item__comment">
+                            <a href="#" id="dbtn">454 отзыва</a>
+                        </div>
+                    </div>
+                    <div class="item__description description">
+                        <a href="#" class="item__description-name" id="cbtn">
+                            MangoMoney
+                        </a>
+                        <div class="description__block">
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Срок займа
+                                </div>
+                                <div class="description__block-options">
+                                    на 21 день
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Сумма займа
+                                </div>
+                                <div class="description__block-options">
+                                    до 300 000 ₽
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Рассмотрение
+                                </div>
+                                <div class="description__block-options">
+                                    5 минут
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Возраст заемщика
+                                </div>
+                                <div class="description__block-options">
+                                    от 18 до 70 лет
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Ставка
+                                </div>
+                                <div class="description__block-options">
+                                    100%
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper block-wrapper-img">
+                                <div class="description__block-title">
+                                    Способы получения
+                                </div>
+                                <div class="description__block-options">
+                                    <img src="images/content/cards.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item__btn">
+                        <div class="item__btn-rate">
+                            <a href="#" class="item__btn-rate-link link open-popup">
+                                Подать заявку
+                            </a>
+                            <div class="rate-star-title">
+                                Рейтинг организации
+                            </div>
+                            <div class="rate-star">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="popular-loans__item item">
+                    <div class="item__logo">
+                        <img src="images/content/loans-item-2.svg" alt="">
+                        <div class="item__comment">
+                            <a href="#" id="dbtn">454 отзыва</a>
+                        </div>
+                    </div>
+                    <div class="item__description description">
+                        <a href="#" class="item__description-name" id="cbtn">
+                            MangoMoney
+                        </a>
+                        <div class="description__block">
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Срок займа
+                                </div>
+                                <div class="description__block-options">
+                                    на 21 день
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Сумма займа
+                                </div>
+                                <div class="description__block-options">
+                                    до 300 000 ₽
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Рассмотрение
+                                </div>
+                                <div class="description__block-options">
+                                    5 минут
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Возраст заемщика
+                                </div>
+                                <div class="description__block-options">
+                                    от 18 до 70 лет
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Ставка
+                                </div>
+                                <div class="description__block-options">
+                                    100%
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper block-wrapper-img">
+                                <div class="description__block-title">
+                                    Способы получения
+                                </div>
+                                <div class="description__block-options">
+                                    <img src="images/content/cards.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item__btn">
+                        <div class="btn">
+                        </div>
+                        <div class="item__btn-rate">
+                            <a href="#" class="item__btn-rate-link link open-popup">
+                                Подать заявку
+                            </a>
+                            <div class="rate-star-title">
+                                Рейтинг организации
+                            </div>
+                            <div class="rate-star">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-loans__item item">
+                    <div class="item__logo">
+                        <img src="images/content/loans-item-3.svg" alt="">
+                        <div class="item__comment">
+                            <a href="#" id="dbtn">454 отзыва</a>
+                        </div>
+                    </div>
+                    <div class="item__description description">
+                        <a href="#" class="item__description-name" id="cbtn">
+                            MangoMoney
+                        </a>
+                        <div class="description__block">
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Срок займа
+                                </div>
+                                <div class="description__block-options">
+                                    на 21 день
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Сумма займа
+                                </div>
+                                <div class="description__block-options">
+                                    до 300 000 ₽
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Рассмотрение
+                                </div>
+                                <div class="description__block-options">
+                                    5 минут
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Возраст заемщика
+                                </div>
+                                <div class="description__block-options">
+                                    от 18 до 70 лет
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Ставка
+                                </div>
+                                <div class="description__block-options">
+                                    100%
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper block-wrapper-img">
+                                <div class="description__block-title">
+                                    Способы получения
+                                </div>
+                                <div class="description__block-options">
+                                    <img src="images/content/cards.svg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item__btn">
+                        <div class="btn">
+                        </div>
+                        <div class="item__btn-rate">
+                            <a href="#" class="item__btn-rate-link link open-popup">
+                                Подать заявку
+                            </a>
+                            <div class="rate-star-title">
+                                Рейтинг организации
+                            </div>
+                            <div class="rate-star">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-loans__item item">
+                    <div class="item__logo">
+                        <img src="images/content/loans-item-4.svg" alt="">
+                        <div class="item__comment">
+                            <a href="#" id="dbtn">454 отзыва</a>
+                        </div>
+                    </div>
+                    <div class="item__description description">
+                        <a href="#" class="item__description-name" id="cbtn">
+                            MangoMoney
+                        </a>
+                        <div class="description__block">
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Срок займа
+                                </div>
+                                <div class="description__block-options">
+                                    на 21 день
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Сумма займа
+                                </div>
+                                <div class="description__block-options">
+                                    до 300 000 ₽
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Рассмотрение
+                                </div>
+                                <div class="description__block-options">
+                                    5 минут
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Возраст заемщика
+                                </div>
+                                <div class="description__block-options">
+                                    от 18 до 70 лет
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper">
+                                <div class="description__block-title">
+                                    Ставка
+                                </div>
+                                <div class="description__block-options">
+                                    100%
+                                </div>
+                            </div>
+
+                            <div class="description__block-wrapper block-wrapper-img">
+                                <div class="description__block-title">
+                                    Способы получения
+                                </div>
+                                <div class="description__block-options">
+                                    <img src="images/content/cards.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__btn">
+                        <div class="btn">
+                        </div>
+                        <div class="item__btn-rate">
+                            <a href="#" class="item__btn-rate-link link open-popup">
+                                Подать заявку
+                            </a>
+                            <div class="rate-star-title">
+                                Рейтинг организации
+                            </div>
+                            <div class="rate-star">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-loans-btn">
+                <a href="#" class="link">
+                    Все займы
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-block">
+        <div class="form-block__wrapper">
+            <div class="container">
+                <form>
+                    <div class="form__title title">
+                        Онлайн-заявка на микрозаём во все МФО
+                    </div>
+                    <label>
+                        <input type="name" placeholder="Илья Василенко" required>
+                        Точно как в паспорте
+                    </label>
+                    <div class="input-wrapper">
+                        <label>
+                            <input type="tel" placeholder="Мобильный телефон" required>Пришлем СМС с решением
+                            банка
+                        </label>
+                        <label>
+                            <input type="email" placeholder="Электронная почта" required>Пришлем информацию по вашей
+                            заявке
+                        </label>
+                    </div>
+                    <div class="personal-data__wrapper">
+                        <input class="personal-data-point" type="checkbox" required>
+                        <p class="personal-data">Согласен(на) с условиями <a href="#">обработки персональных данных</a>,
+                            правилами оказания услуг и выражаю свое согласие на получение сведений из основной части
+                            кредитных
+                            историй и всей иной информации
+                        </p>
+                    </div>
+
+                    <a href="#" class="form-btn link">
+                        Отправить заявку
+                    </a>
+                </form>
+                <img src="images/content/girl-foto.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews-title title">
+                Отзывы о займах
+            </div>
+            <div class="reviews__inner">
+                <div class="reviews__item">
+                    <div class="reviews__item-content">
+                        <img src="images/content/reviews-item-logo-2.svg" alt="">
+                        <div class="reviews__item-text">
+                            Ализайм - очень спорная МФО. Не люблю в принципе любые организации, чем бы они ни
+                            занимались, если они в качестве рекламы, а в данном случае, еще и в названии, косят под
+                            известный бренд...
+                        </div>
+                        <a href="#" class="reviews__item-link item-link">
+                            Читать далее
+                        </a>
+                    </div>
+                    <div class="reviews__item-block-name block-name">
+                        <div class="block-name-name">
+                            Ирина Шейк
+                        </div>
+                        <div class="rate-star">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="block-name-date">
+                        12 сентября 2019
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__item-content">
+                        <img src="images/content/reviews-item-logo-1.svg" alt="">
+                        <div class="reviews__item-text">
+                            Ализайм - очень спорная МФО. Не люблю в принципе любые организации, чем бы они ни
+                            занимались, если они в качестве рекламы, а в данном случае, еще и в названии, косят под
+                            известный бренд...
+                        </div>
+                        <a href="#" class="reviews__item-link item-link">
+                            Читать далее
+                        </a>
+                    </div>
+                    <div class="reviews__item-block-name block-name">
+                        <div class="block-name-name">
+                            Андрей Иванов
+                        </div>
+                        <div class="rate-star">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="block-name-date">
+                        12 сентября 2019
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__item-content">
+                        <img src="images/content/reviews-item-logo-3.svg" alt="">
+                        <div class="reviews__item-text">
+                            Ализайм - очень спорная МФО. Не люблю в принципе любые организации, чем бы они ни
+                            занимались, если они в качестве рекламы, а в данном случае, еще и в названии, косят под
+                            известный бренд...
+                        </div>
+                        <a href="#" class="reviews__item-link item-link">
+                            Читать далее
+                        </a>
+                    </div>
+                    <div class="reviews__item-block-name block-name">
+                        <div class="block-name-name">
+                            Сергей Перекаткин
+                        </div>
+                        <div class="rate-star">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="block-name-date">
+                        12 сентября 2019
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="reviews__item-content">
+                        <img src="images/content/reviews-item-logo-4.svg" alt="">
+                        <div class="reviews__item-text">
+                            Ализайм - очень спорная МФО. Не люблю в принципе любые организации, чем бы они ни
+                            занимались, если они в качестве рекламы, а в данном случае, еще и в названии, косят под
+                            известный бренд...
+                        </div>
+                        <a href="#" class="reviews__item-link item-link">
+                            Читать далее
+                        </a>
+                    </div>
+                    <div class="reviews__item-block-name block-name">
+                        <div class="block-name-name">
+                            Илья
+                        </div>
+                        <div class="rate-star">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="block-name-date">
+                        12 сентября 2019
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__btn">
+                <a class="link" href="#" id="dbtn">
+                    Все отзывы
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="conditions">
+        <div class="container">
+            <div class="conditions-title title">
+                Выберите подходящие для вас условия займа
+            </div>
+            <div class="conditions__inner">
+                <div class="conditions__item">
+                    <div class="conditions__item-title">
+                        Срок займа
+                    </div>
+                    <div class="conditions__item-line">
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                На месяц
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                На полгода
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                На год
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Долгосрочный
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Краткосрочный
+                            </a>
+                        </li>
+                        <li><a href="#">
+
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="conditions__item">
+                    <div class="conditions__item-title">
+                        Сумма займа
+                    </div>
+                    <div class="conditions__item-line">
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                10 000 рублей
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                15 000 рублей
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                50 000 рублей
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                от 100 000 рублей
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="conditions__item">
+                    <div class="conditions__item-title">
+                        Возраст
+                    </div>
+                    <div class="conditions__item-line">
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                С 18 лет
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                С 19 лет
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                С 20 лет
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Пенсионерам
+                            </a>
+                        </li>
+                        <li><a href="#">
+
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="conditions__item">
+                    <div class="conditions__item-title">
+                        Результат
+                    </div>
+                    <div class="conditions__item-line">
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                За 5 минут
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Мгновенный
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Срочный
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Быстрый
+                            </a>
+                        </li>
+                        <li><a href="#">
+
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="conditions__item">
+                    <div class="conditions__item-title">
+                        Условия
+                    </div>
+                    <div class="conditions__item-line">
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                По телефону
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Без процентов
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Без паспорта
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Без поручителей
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Под залог ПТС
+                            </a>
+                        </li>
+                        <li><a href="#">
+
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="conditions__item">
+                    <div class="conditions__item-title">
+                        Способ получения
+                    </div>
+                    <div class="conditions__item-line">
+                        <div></div>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Наличными
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                На карту
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                На электронный кошелек
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Банковский перевод
+                            </a>
+                        </li>
+                        <li><a href="#">
+
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="questions">
+        <div class="container">
+            <div class="questions__title">
+                <div class="title">
+                    Вопрос-ответ
+                </div>
+                <a href="#" class="questions__btn link open-popup">
+                    Задать вопрос
+                </a>
+            </div>
+            <div class="questions__inner">
+                <div class="questions__item">
+                    <div class="questions__item-title">
+                        Просрочил платеж в МФО Взаимно, как подать на банкротство?
+                    </div>
+                    <div class="questions__item-text">
+                        Ализайм - очень спорная МФО. Не люблю в принципе любые организации, чем бы они ни занимались...
+                    </div>
+                    <a href="#" class="questions__item-link item-link">
+                        Читать ответ
+                    </a>
+                </div>
+                <div class="questions__item">
+                    <div class="questions__item-title">
+                        Просрочил платеж в МФО Взаимно, как подать на банкротство?
+                    </div>
+                    <div class="questions__item-text">
+                        Ализайм - очень спорная МФО. Не люблю в принципе любые организации, чем бы они ни занимались...
+                    </div>
+                    <a href="#" class="questions__item-link item-link">
+                        Читать ответ
+                    </a>
+                </div>
+                <div class="questions__item">
+                    <div class="questions__item-title">
+                        Просрочил платеж в МФО Взаимно, как подать на банкротство?
+                    </div>
+                    <div class="questions__item-text">
+                        Ализайм - очень спорная МФО. Не люблю в принципе любые организации, чем бы они ни занимались...
+                    </div>
+                    <a href="#" class="questions__item-link item-link">
+                        Читать ответ
+                    </a>
+                </div>
+            </div>
+            <div class="questions__btn-bottom">
+                <a href="#" class="link">
+                    Все вопросы
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="seo-text">
+        <div class="container">
+            <div class="seo-text__title title">
+                Заголовок СЕО-текста
+            </div>
+            <p>
+                За кредитом можно обратиться в банк или в микрофинансовую организацию (МФО). Если у вас есть возможность
+                взять на работе справку о заработной плате и время не поджимает, банковская структура вполне подойдет —
+                в течение недели после обращения можно получить деньги.
+
+            </p>
+            <p>
+                Если финансовая помощь нужна срочно — уже сегодня или максимум завтра, выручит микрофинансовая
+                организация. В любой момент (в режиме 24/7). Вы можете подать онлайн заявку на микрозайм, имея под рукой
+                только свой паспорт.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__item">
+                    <a href="#" class="logo" id="abtn">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer__item footer__item-1">
+                    © 2019 — Все займы под рукой Онлайн-сервис с отзывами о МФО Все права защищены
+                </div>
+                <div class="footer__item-2">
+                    <div class="footer__item-title">
+                        Возраст
+                    </div>
+                    <ul class="footer__item-text">
+                        <li>С 18 лет</li>
+                        <li>С 19 лет</li>
+                        <li>С 20 лет</li>
+                        <li>Пенсионерам</li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Результат
+                    </div>
+                    <ul class="footer__item-text">
+                        <li>За 5 минут</li>
+                        <li>Мгновенный</li>
+                        <li>Срочный</li>
+                        <li>Быстрый</li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-title">
+                        Сумма займа
+                    </div>
+                    <ul class="footer__item-text">
+                        <li>10 000 рублей</li>
+                        <li>15 000 рублей</li>
+                        <li>50 000 рублей</li>
+                        <li>от 100 000 рублей</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <a href="#">
+                    Пользовательское соглашение
+                </a>
+                <a href="#">
+                    Политика конфеденциальности
+                </a>
+                <a href="#">
+                    Карта сайта
+                </a>
+            </div>
+        </div>
+    </footer>
+
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup__title">
+            Хотите займ под 0%?
+            Абсолютно бесплатно!
+        </div>
+        <div class="pupup__subtitle">
+            Укажите свою электронную почту и мы пришлём вам список микрофинансовых организаций, в которых можно получить
+            первый займ без процентов, а так же промокоды и секретные предложения ведущих банков страны!
+        </div>
+        <div class="input-btn">
+            <input type="email" placeholder="Введите электронную почту">
+            <a href="#" class="popup-btn link">
+                Получить бонус
+            </a>
+        </div>
+        <div class="popup__bottom">
+            Мы не передадим ваш адрес третьим лицам. Оформляя подписку, вы соглашаетесь получать письма от сервиса
+            «ВсеЗайм.com». В любой момент в можете отписаться от рассылки по ссылке в конце письма.
+        </div>
+    </div>
+</div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/rangeslider.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

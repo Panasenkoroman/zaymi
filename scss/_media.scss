@@ -1,0 +1,654 @@
+@media(max-width:1153px){
+    // .form-block .container img {
+    //     width: 442px;
+    //     height: 394px;
+    //     margin-top: auto;
+    // }
+}
+@media(max-width:1144px){
+    .reviews-mfo .left-site__top input{
+        width: 100%;
+    }
+    .reviews-mfo .left-site__top .drop-down{
+        margin-left: 0;
+    }
+    .reviews-mfo{
+        .selectize-control, .selectize-input{
+            margin-right: 10px;
+        }
+    }
+    .loan-card .calculator__item{
+        max-width: 445px;
+        width: 100%;
+        
+    }
+    .categories .top img {
+        margin-right: -150px;
+    }
+    .top-foto{
+        margin-left: -160px;
+        margin-right: -100px;
+    }
+}
+@media(max-width:1118px){
+    .form-block .container img{
+        margin-right: -140px;
+    }
+}
+@media(max-width:1088px){
+    
+    .reviews__item-block-name,
+    .block-name-date{
+        margin-left: 15px;
+    }
+    .reviews__item{
+        max-width: 50%;
+    }
+    .form-block form .input-wrapper label {
+        width: 100%;
+        &+label{
+            margin-left: 0;
+        }
+    }
+    .popular-loans .container::after, 
+    .popular-loans .container::before, 
+    .reviews .container::after, 
+    .reviews .container::before, 
+    .questions .container::after, 
+    .questions .container::before, 
+    .latest-reviews__contetnt-items::after, 
+    .latest-reviews__contetnt-items::before,
+    .latest-reviews__contetnt::after, 
+    .latest-reviews__contetnt::before,
+    .block-reviews::after, .block-reviews::before{
+        display: none;
+    }
+}
+@media(max-width:1074px){
+    .block-btn{
+        padding: 20px 40px;
+        .link{
+            margin-top: 15px;
+        }
+    }
+}
+@media(max-width:1069px){
+    
+    .block-link-text{
+        margin-top: 10px;
+    }
+}
+@media(max-width:1026px){
+    .questions__item{
+        max-width: 352px;
+        margin-bottom: 15px;
+    }
+    .categories .top img{
+        display: none;
+    }
+}
+@media(max-width:1000px){
+    .popular-loans {
+        padding-bottom: 10px;
+    }
+    .advantages .advantages__item{
+        display: block;
+        text-align: center;
+        width: 29%;
+    }
+    .advantages img{
+        margin: 0 auto;
+        height: 73px;
+    }
+    .advantages .advantages__item-subtitle{
+        max-width: 100%;
+    }
+    .top{
+        padding-top: 20px;
+    }
+    .calculator .title {
+        margin-bottom: 15px;
+    }
+    .calculator__item+.calculator__item {
+        margin-top: 15px;
+    }
+    .calculator__item-summ+.link{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 15px;
+    }
+    .top-foto{
+        width: 480px;
+        height: 390px;
+        margin-right: -40px;
+        margin-left: -90px;
+        margin-top: auto;
+    }
+}
+@media(max-width:971px){
+    .form-block form{
+        margin: 0 auto;
+    }
+    .form-block .container img{
+        display: none;
+    }
+    .reviews-mfo .left-site__top input{
+        margin-bottom: 15px;
+    }
+    .reviews-sits .loan-card__acide-wrapper {
+        margin-top: 54px;
+    }
+    .conditions__item {
+        width: 30%;
+        margin-bottom: 25px;
+    }
+    .reviews-mfo{
+        .loan-card__acide-wrapper{
+            margin-top:108px;
+        }
+    }
+    .left-site__top{
+        .link{
+            margin-left: auto;
+            margin-bottom: 10px;
+        }
+        flex-wrap: wrap;
+        .sorting{
+            width: 100%;
+        }
+    }
+}
+@media(max-width:936px){
+    .reviews-mfo .loan-card__acide-wrapper {
+        margin-top: 142px;
+    }
+}
+@media(max-width:930px){
+    .block-btn{
+        padding: 20px 10px;
+    }
+    .seo-text{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .form-block{
+        overflow: hidden;
+    }
+    // .form-block .container img{
+    //     margin-right: -120px;
+    //     height: 497px;
+    // }
+}
+@media(max-width:900px){
+    .questions__item {
+        max-width: 100%;
+        padding-left: 30px;
+        &::before{
+            left: 0;
+        }
+    }
+    .questions__inner{
+        padding-bottom: 0;
+    }
+    .questions__btn-bottom .link{
+        margin-top: 10px;
+    }
+    .questions__item-title{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .questions__item-link{
+        margin-top: 0;
+    }
+    .popular-loans__item{
+        padding: 30px 20px;
+    }
+}
+@media(max-width:863px){
+    .reviews-mfo .left-site__top .drop-down{
+        margin-top: 15px;
+    }
+}
+@media(max-width:850px){
+    
+    .popular-loans__item{
+        padding: 20px 10px;
+    }
+    .header__menu{
+        height: calc(100vh - 70px);
+        max-height: 0px;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        transition: all .3s;
+        .drop-down{
+            &::before{
+                top:5px;
+                bottom: auto;
+            }
+        }
+        li{
+            display: block;
+            text-align: right;
+            margin-right: 25px;
+            &:first-child{
+                margin-top: 20px;
+            }
+            .drop__down-list-wrapper{
+                position: unset;
+                .drop__down-list{
+                    margin-left: auto;
+                    padding: 10px 15px;
+                    &::before{
+                        left: auto;
+                        right: 20px;
+                    }
+                }
+            }
+        }
+        li+li{
+            margin-left: 0;
+            margin-top: 30px;
+        }
+    }
+    .header__menu-btn{
+        display: block;
+        z-index: 11;
+        margin-right: -16px;
+    }
+    .reviews-mfo .loan-card__acide-wrapper {
+        margin-top: 198px;
+    }
+}
+@media(max-width:810px){
+    .block-reviews{
+        padding-bottom: 40px;
+    }
+    .item__description{
+        order: 2;
+    }
+    .page-reviews .loan-card__contacts{
+        padding-top: 40px;
+    }
+    .description__block-wrapper{
+        width:130px;
+        margin-left: 7px;
+    }
+    .description__block{
+        max-width: 750px;
+        width: 100%;
+    }
+}
+@media(max-width:800px){
+    .contetnt-item.block-name,
+    .loan-card .contetnt-item.block-name{
+        max-width: 140px;
+        .rate-star{
+            margin-top: 10px;
+        }
+        .block-name-date{
+            margin-left: 0;
+        }
+    }
+    .footer__inner{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .footer__item{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    .footer__item-1{
+        max-width: 40%;
+        width: 100%;
+        padding-right: 10px;
+    }
+    .top-foto{
+        display: none;
+    }
+    .calculator{
+        margin: 0 auto;
+    }
+}
+@media(max-width:769px){
+    .categories .calculator__item{
+        max-width: 320px;
+        margin-right: 15px;
+        min-width: 290px;
+    }
+    .popular-loans{
+        padding-top: 40px;
+    }
+    .calculator{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .calculator__title,
+    .calculator__item{
+        width: 100%;
+    }
+    .categories .calculator__item-summ{
+        margin-left: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    .categories .calculator__item:nth-child(3){
+        margin-left: 0px;
+    }
+}
+@media(max-width:745px){
+    .categories .calculator__item:nth-child(3){
+        margin-left: 0px;
+    }
+    .seo-text p+p{
+        margin-top: 15px;
+    }
+    .seo-text__title{
+        margin-bottom: 15px;
+    }
+    .advantages .advantages__item{
+        width: 60%;
+        margin: 0 auto;
+        &+.advantages__item{
+            margin-top: 40px;
+        }
+    }
+    
+    .popular-loans{
+        padding-bottom: 15px;
+        .container{
+            margin-bottom: 0;
+        }
+    }
+}
+@media(max-width:715px){
+    .popup{
+        padding: 30px 40px;
+    }
+    
+}
+@media(max-width:689px){
+    .popup{
+        padding: 30px 40px;
+    }
+    .loan-card .navigation{
+        display: none;
+    }
+    .reviews-mfo .left-site__top .drop-down{
+        margin-top: 0px;
+    }
+    .reviews-mfo .loan-card__acide-wrapper {
+        margin-top: 10px;
+    }
+    .popular-loans .block-title{
+        display: block;
+        .sorting{
+            margin-top: 10px;
+            display: block;
+            p{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .latest-reviews .container,
+    .loan-card .loan-card__inner .container,
+    .reviews-sits .container{
+        display: block;
+    }
+    .latest-reviews__acide{
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    .acide{
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .loan-card__acide-wrapper{
+        margin-bottom: 50px;
+        position: unset;
+    }
+    .latest-reviews__acide-block{
+        margin-bottom: 50px;
+        
+    }
+    .loan-card__acide-block{
+        position: unset;
+    }
+    .loan-card .loan-card__inner{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media(max-width:620px){
+    .popup-btn{
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .popup{
+        input{
+            max-width: 100%;
+        }
+    }
+    .input-btn{
+        padding-bottom: 20px;
+    }
+}
+@media(max-width:606px){
+    .form-block form .input-wrapper label {
+        width: 100%;
+        &+label{
+            margin-left: 0;
+        }
+    }
+    .footer__bottom {
+        padding-bottom: 10px;
+        a{
+            width: 100%;
+        }
+        a+a {
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        
+    }
+}
+@media(max-width:570px){
+    .advantages .advantages__item{
+        width: 100%;
+    }
+}
+@media(max-width:561px){
+    .reviews-mfo .left-site__top .drop-down{
+        margin-top: 15px;
+    }
+}
+@media(max-width:531px){
+    .block-questions__content{
+        padding-left: 10px;
+    }
+    .item-attention{
+        padding-right: 0;
+        .sign{
+            margin-left: 2px;
+            height: 40px;
+            margin-right: 10px;
+        }
+    }
+    .loan-card__contacts{
+        max-width: 140px;
+        margin-right: auto;
+        text-align: left;
+        max-height: 100px;
+        margin-left: 20px;
+        a+a{
+            margin-left: 0;
+            margin-top: 10px;
+        }
+        a:first-child{
+            margin-left: 0;
+        }
+    }
+    .reviews__item {
+        max-width: 100%;
+        text-align: center;
+    }
+    .reviews__item-block-name, 
+    .block-name-date {
+        margin-left: 0;
+    }
+    .block-name-date{
+        text-align: left;
+    }
+}
+@media(max-width:500px){
+    .item-cheked__box-line{
+        margin-right: 15px;
+    }
+    .block__img{
+        text-align: center;
+        img{
+            max-width: 372px;
+            max-height: 473px;
+        }
+        
+    }
+    .loan-card .calculator{
+        padding: 20px 15px;
+    }
+    .latest-reviews__contetnt-item{
+        padding: 20px 10px;
+        padding-right: 0;
+    }
+    .conditions__item {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+    .conditions-title{
+        margin-left: 0;
+    }
+    .conditions{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .conditions__inner{
+        margin-bottom: -40px;
+    }
+}
+@media(max-width:469px){
+    .block-reviews{
+        padding-bottom: 0;
+    }
+    .item__btn-rate-link.link{
+        padding: 16px 30px;
+        margin-top: 0;
+    }
+    .item__btn{
+        order: 3;
+        margin: 10px auto;
+        width: 100%;
+        padding-top: 30px;
+        .rate-star{
+            margin: 10px auto;
+        }
+        .item__btn-rate-comments{
+            margin-top: 5px;
+        }
+    }
+
+    .description__block-wrapper{
+        width:122px;
+        margin-left: 1px;
+    }
+    .description__block-wrapper{
+        width: 48%;
+    }
+}
+@media(max-width:440px){
+    .popular-loans__item {
+        padding: 10px 0px;
+    }
+    .contetnt-item__top{
+        padding-bottom: 15px;
+    }
+    .form-reviews form{
+        padding: 20px 10px;
+    }
+    .footer__item-1{
+        max-width: 100%;
+        .form-reviews-text{
+            margin-bottom: 10px;
+        }
+    }
+    .footer__item{
+        width: 100%;
+        &:last-child(1){
+            margin-bottom: 0;
+        }
+    }
+    .footer__inner{
+        padding-bottom: 0;
+    }
+}
+@media(max-width:413px){
+    .form-reviews .form-reviews-text{
+        padding-left: 0;
+    }
+}
+@media(max-width:400px){ 
+    .popup{
+        padding: 20px 15px;
+    }
+    .loan-card .rate-star{
+        margin-top: 5px;
+    }
+    .item-bg{
+        padding: 17px 30px;
+    }
+    
+    .block__img img {
+        max-width: 284px;
+    }
+    .calculator__item-summ,
+    .categories .calculator__item-summ{
+        padding: 10px 15px;
+    }
+    .calculator__item-summ{
+        padding: 10px 5px;
+    }
+    .calculator__item-checkbox label {
+        width: 51%;
+    }
+}
+@media(max-width:380px){
+    .item-figure{
+        padding-right: 10px;
+        background-position: center left -4px;
+        background-size: 37px;
+    }
+    .item-attention{
+        padding-left: 15px;
+         .sign{
+            display: none;
+        }
+    }
+    
+}
+@media(max-width:350px){
+    .breadcrumbs{
+        display: none;
+    }
+    .assessment-text{
+        margin-right: 10px;
+    }
+    .left-site__top{
+        .title{
+            width: 100%;
+        } 
+        .link{
+            margin-left: 0;
+        }
+    }
+}
