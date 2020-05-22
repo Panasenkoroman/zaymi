@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Все займы</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/rangeslider.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -275,29 +276,29 @@
 
                     </div>
 
-
+                    
 
                     <div class="conditions" id="nav-2">
-                        <table>
-                            <tr>
-                                <th class="">Условия</th>
-                                <th class="">Сумма</th>
-                            </tr>
-                            <tr>
-                                <td class="conditions__block-item-1">Минимальная сумма</td>
-                                <td class="conditions__block-item-2">1 000 000 рублей</td>
-                            </tr>
-                            <tr>
-                                <td class="conditions__block-item-1">Максимальная сумма</td>
-                                <td class="conditions__block-item-2">50 000 000 рублей</td>
-                            </tr>
-                            <tr>
-                                <td class="conditions__block-item-1">Время рассмотрения заявки</td>
-                                <td class="conditions__block-item-2">В период с 9:00 до 21:00 по МСК:
-                                    15 минут — при первичном обращении
-                                    5 минут — при повторном обращении</td>
-                            </tr>
-                        </table>
+                            <table>
+                                    <tr>
+                                        <th class="">Условия</th>
+                                        <th class="">Сумма</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="conditions__block-item-1">Минимальная сумма</td>
+                                        <td class="conditions__block-item-2">1 000 000 рублей</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="conditions__block-item-1">Максимальная сумма</td>
+                                        <td class="conditions__block-item-2">50 000 000 рублей</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="conditions__block-item-1">Время рассмотрения заявки</td>
+                                        <td class="conditions__block-item-2">В период с 9:00 до 21:00 по МСК:
+                                            15 минут — при первичном обращении
+                                            5 минут — при повторном обращении</td>
+                                    </tr>
+                                </table>
                     </div>
 
                     <div class="calculator">
@@ -308,20 +309,20 @@
                             <div class="calculator__item-title">
                                 Сколько денег нужно?
                             </div>
-                            <input type="text" value="50 000">
-                            <input id="price">
+                            <input class="calculator__summ" type="text" value="50 000">
+                            <input type="range" id="price" min="10000" max="500000" value="50000" step="1000">
                             <div class="calculator__item-title">
-                                Сумма погашения: <span>55 670 ₽</span>
+                                Сумма погашения: <span class="you-give">55 670 ₽</span>
                             </div>
                         </div>
                         <div class="calculator__item">
                             <div class="calculator__item-title">
                                 На какой срок берете?
                             </div>
-                            <input type="text" value="На 8 месяцев">
-                            <input id="term">
+                            <input class="calculator__term" type="text" value="На 8 дней">
+                            <input type="range" id="term" min="7" max="54.67" value="8" step="1">
                             <div class="calculator__item-title">
-                                Погашение: <span>12 декабря 2020</span>
+                                Погашение: <span class="date-end">12 декабря 2020</span>
                             </div>
                         </div>
                         <div class="calculator__item">
@@ -681,102 +682,92 @@
                     </div>
 
                 </div>
-                <div class="acids">
-                    <div class="loan-card__acide acide" id="acide">
-                        <div class="loan-card__acide-wrapper">
-
-                            <div class="navigation">
-                                <div class="navigation__title">
-                                    Содержание
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#nav-1" data-target="anchor">
-                                            Требования к заемщикам
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#nav-2" data-target="anchor">
-                                            Условия
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#nav-3" data-target="anchor">
-                                            Как оформить
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#nav-4" data-target="anchor">
-                                            Вопрос-ответ
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#nav-5" data-target="anchor">
-                                            Особые предложения
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#nav-6" data-target="anchor">
-                                            Отзывы
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="acide__title title">
-                                Похожие займы
-                            </div>
-                            <div class="latest-reviews__acide-block">
-                                <div class="item__logo">
-                                    <img src="images/content/loans-item-1.svg" alt="">
-                                    <div class="item__comment">
-                                        <a href="#" id="dbtn">454 отзыва</a>
-                                    </div>
-                                </div>
-                                <div class="acide-block__sab">
-                                    Рейтинг
-                                    <div class="rate-star">
-                                        <div style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                                <div class="acide-block__sab">
-                                    Срок займа
-                                    <span>
-                                        на 21 день
-                                    </span>
-                                </div>
-                                <div class="acide-block__sab">
-                                    Процентная ставка
-                                    <span>
-                                        от 12%
-                                    </span>
-                                </div>
-                                <div class="acide-block__sab">
-                                    Сумма
-                                    <span>
-                                        до 65 000 ₽
-                                    </span>
-                                </div>
-                                <a href="#" class="acide-btn link open-popup">
-                                    Подать заявку
+                <div class="loan-card__acide acide">
+                    <div class="navigation">
+                        <div class="navigation__title">
+                            Содержание
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#nav-1" data-target="anchor">
+                                    Требования к заемщикам
                                 </a>
-                            </div>
-                        </div>
-
-
-
-
+                            </li>
+                            <li>
+                                <a href="#nav-2" data-target="anchor">
+                                    Условия
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#nav-3" data-target="anchor">
+                                    Как оформить
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#nav-4" data-target="anchor">
+                                    Вопрос-ответ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#nav-5" data-target="anchor">
+                                    Особые предложения
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#nav-6" data-target="anchor">
+                                    Отзывы
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="acide acide-2">
-                        <div class="loan-card__acide-block">
-                            <a href="#" class="link open-popup">
-                                Выбирайте лучшие займы!
-                            </a>
-                            <img src="images/content/gice.png" alt="">
+                    <div class="loan-card__acide-">
+                        <div class="acide__title title">
+                            Похожие займы
                         </div>
+                        <div class="latest-reviews__acide-block">
+                            <div class="item__logo">
+                                <img src="images/content/loans-item-1.svg" alt="">
+                                <div class="item__comment">
+                                    <a href="#" id="dbtn">454 отзыва</a>
+                                </div>
+                            </div>
+                            <div class="acide-block__sab">
+                                Рейтинг
+                                <div class="rate-star">
+                                    <div style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="acide-block__sab">
+                                Срок займа
+                                <span>
+                                    на 21 день
+                                </span>
+                            </div>
+                            <div class="acide-block__sab">
+                                Процентная ставка
+                                <span>
+                                    от 12%
+                                </span>
+                            </div>
+                            <div class="acide-block__sab">
+                                Сумма
+                                <span>
+                                    до 65 000 ₽
+                                </span>
+                            </div>
+                            <a href="#" class="acide-btn link open-popup">
+                                Подать заявку
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="loan-card__acide-block">
+                        <a href="#" class="link open-popup">
+                            Выбирайте лучшие займы!
+                        </a>
+                        <img src="images/content/gice.png" alt="">
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -842,30 +833,30 @@
             </div>
         </div>
     </footer>
-    <div class="popup-wrapper">
-        <div class="popup">
-            <div class="popup__title">
-                Хотите займ под 0%?
-                Абсолютно бесплатно!
-            </div>
-            <div class="pupup__subtitle">
-                Укажите свою электронную почту и мы пришлём вам список микрофинансовых организаций, в которых можно
-                получить
-                первый займ без процентов, а так же промокоды и секретные предложения ведущих банков страны!
-            </div>
-            <div class="input-btn">
-                <input type="email" placeholder="Введите электронную почту">
-                <a href="#" class="popup-btn link">
-                    Получить бонус
-                </a>
-            </div>
-            <div class="popup__bottom">
-                Мы не передадим ваш адрес третьим лицам. Оформляя подписку, вы соглашаетесь получать письма от сервиса
-                «ВсеЗайм.com». В любой момент в можете отписаться от рассылки по ссылке в конце письма.
-            </div>
+<div class="popup-wrapper">
+    <div class="popup">
+        <div class="popup__title">
+            Хотите займ под 0%?
+            Абсолютно бесплатно!
+        </div>
+        <div class="pupup__subtitle">
+            Укажите свою электронную почту и мы пришлём вам список микрофинансовых организаций, в которых можно получить
+            первый займ без процентов, а так же промокоды и секретные предложения ведущих банков страны!
+        </div>
+        <div class="input-btn">
+            <input type="email" placeholder="Введите электронную почту">
+            <a href="#" class="popup-btn link">
+                Получить бонус
+            </a>
+        </div>
+        <div class="popup__bottom">
+            Мы не передадим ваш адрес третьим лицам. Оформляя подписку, вы соглашаетесь получать письма от сервиса
+            «ВсеЗайм.com». В любой момент в можете отписаться от рассылки по ссылке в конце письма.
         </div>
     </div>
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/rangeslider.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>

@@ -47,19 +47,23 @@
         }
     }
 }
-.header__menu-btn.active
-    span
-        height: 0
-        &::before
-            transform: rotate(45deg)
-        
-        &::after
-            transform: rotate(-45deg)
+.header__menu-btn.active{
+    span{
+        height: 0;
+        &::before{
+            transform: rotate(45deg);
+        }
+        &::after{
+            transform: rotate(-45deg);
+        }
+    }
+}
 .header__menu.active{
     width: 100%;
     max-height: 100vh;
     overflow: auto;
     z-index: 10;
+    
 }
 .header__menu{
     font-size: 16px;
@@ -180,8 +184,12 @@
     font-size: 13px;
     color: #586069;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
+
+
+
+
+
 .irs--flat .irs-bar{
     bottom: 0;
     top:auto;
@@ -249,6 +257,47 @@
     border-radius: 50%;
     position: absolute;
 }
+
+.rangeslider--horizontal{
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: -5px;
+    height: 5px;
+    .rangeslider__fill{
+        border-radius: 0 5px 5px 0;
+        height: 5px;
+        background: #2A8BFB;
+    }
+    .rangeslider__handle{
+        width: 20px;
+        height: 20px;
+        top: -9px;
+        background: #fff;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+        &:active{
+            box-shadow: 0px 0px 0px 7px rgba(42,139,251,0.3)
+        }
+        &::after{
+            background: #2A8BFB;
+            width: 10px;
+            height: 10px;
+            top: 5px;
+            left: 5px;
+            bottom: inherit;
+            right: inherit;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 .calculator__item+.calculator__item{
     margin-top: 30px;
 }
@@ -381,13 +430,6 @@
 //end advantages
 
 //start popular-loans
-
-.loan-card__acide-wrapper.fixed{
-    position: sticky;
-    top: 0;
-    right: 0;
-}
-
 .popular-loans__inner{
     position: relative;
     margin-top: 28px;
@@ -1224,18 +1266,15 @@
 .loan-card__content{
     max-width: 832px;
 }
-.acids{
+.acide{
     width: 256px;
     margin-left: 32px;
-    height: 100%;
     position: relative;
-    box-sizing: border-box;
-}
-.acide{
 }
 .latest-reviews__acide-block{
     padding: 28px;
     background-color: #FAFBFC;
+    margin-bottom: 1453px;
 }
 .item__logo{
     margin-bottom: 20px;
@@ -1774,22 +1813,23 @@
         }
     }
 }
-.acide-2{
-    max-height: 800px;
-    height: 100%;
-    box-sizing: border-box;
-}
 .loan-card__acide-block{
     background: #FAFBFC;
     border-radius: 5px;
     max-width: 256px;
     padding: 15px;
     padding-bottom: 6px;
+    position: absolute;
+    bottom:478px;
     .link{
         padding: 16px 10px;
     }
 }
-
+.loan-card__acide-wrapper{
+    position: sticky;
+    top:0px;
+    margin-bottom: 1440px;
+}
 //end loan-card
 
 .page-reviews{
@@ -1823,6 +1863,11 @@
     padding-top: 60px;
     .container{
         display: flex;
+    }
+    .loan-card__acide-wrapper {
+        position: unset;
+        margin-bottom: 0;
+        margin-top: 12px;
     }
     .title{
         margin-bottom: 15px;
@@ -1881,6 +1926,9 @@
 }
 
 .reviews-mfo{
+    .loan-card__acide-wrapper{
+        margin-top: 52px;
+    }
     .left-site__top{
         input{
             margin-right: 10px;

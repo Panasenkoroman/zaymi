@@ -28,19 +28,101 @@ $(function(){
 
 
     //     end script drop-down menu   //
+    
+    const monthNames = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"];
 
-
-
-    $("#price").ionRangeSlider({
-        min: 0,
-        max: 200000,
-        from: 50000
+    function calcSumm(){
+        var summ = $(".calculator__summ").val().toString().replace(/[^0-9.]/g, "")
+            
+        if(!$("#term").hasClass("month")){
+            var term = $(".calculator__term").val().toString().replace(/[^0-9.]/g, "")            
+        }else{
+            var term = Number($(".calculator__term").val().toString().replace(/[^0-9.]/g, "")) * 30
+        }
+        $(".you-take").html(summ.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') +" ₽")
+        $(".you-give").html(Number(Number(summ)+Number(((summ * term)*0.01))).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ') +" ₽")
+        $(".your-commission").html(Number((summ * term)*0.01) +" ₽")
+        const d = new Date();
+        if(!$("#term").hasClass("month")){
+            d.setDate(d.getDate() + Number(term))
+        }else{
+            d.setMonth(d.getMonth() + Number(Number(term) / 30))            
+        }
+        var currYear = d.getFullYear(),
+            currMonth = monthNames[d.getMonth()],
+            currDay = d.getDate()
+        $(".date-end").text(currDay+" "+currMonth+" "+currYear)
+    }
+    
+    if($("div").hasClass("calculator")){
+        calcSumm()        
+    }
+    
+    $('#price').rangeslider({
+        polyfill: false,
+        onSlide: function(position, value) {
+            $(".calculator__summ").val(value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' '));
+            calcSumm()
+        }
     });
-    $("#term").ionRangeSlider({
-        min: 2,
-        max: 12,
-        from: 8
+    
+    $('#term').rangeslider({
+        polyfill: false,
+        onSlide: function(position, value) {
+            if(!$("#term").hasClass("month")){
+                $(".calculator__term").val("На "+value+" дней").attr("data-val", value)
+                if(value > 30 || value == 31){
+                    $("#term").attr("step", "2.27")
+                    $("#term").addClass("month")
+                    $(".calculator__term").addClass("month")
+                    $("#term").rangeslider('update', true)                    
+                }
+            }else{
+                if(value < 31.97){
+                    $("#term").removeClass("month")
+                    $(".calculator__term").removeClass("month")
+                    $("#term").attr("step", "1")
+                    $("#term").rangeslider('update', true)
+                }
+                if(value == 31.97){
+                    $(".calculator__term").val("На 2 месяца")
+                }
+                if(value == 34.24){
+                    $(".calculator__term").val("На 3 месяца")
+                }
+                if(value == 36.51){
+                    $(".calculator__term").val("На 4 месяца")
+                }
+                if(value == 38.78){
+                    $(".calculator__term").val("На 5 месяцев")
+                }
+                if(value == 41.05){
+                    $(".calculator__term").val("На 6 месяцев")
+                }
+                if(value == 43.32){
+                    $(".calculator__term").val("На 7 месяцев")
+                }
+                if(value == 45.59){
+                    $(".calculator__term").val("На 8 месяцев")
+                }
+                if(value == 47.86){
+                    $(".calculator__term").val("На 9 месяцев")
+                }
+                if(value == 50.13){
+                    $(".calculator__term").val("На 10 месяцев")
+                }
+                if(value == 52.4){
+                    $(".calculator__term").val("На 11 месяцев")
+                }
+                if(value == 54.67){
+                    $(".calculator__term").val("На 12 месяцев")
+                }
+            }
+            calcSumm()
+        }
     });
+    
+    
 
     $('select').selectize();
 
@@ -83,13 +165,8 @@ $(function(){
     $('.open-popup').on('click', function(){
         $('.popup-wrapper').toggleClass('active');
     });
-    $('.popup-btn').on('click', function(){
-        $('.popup-wrapper').removeClass('active');
-    });
 
     //     popup     //
 
 
-
-   
 });

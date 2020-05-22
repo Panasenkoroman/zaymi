@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Все займы</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/rangeslider.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -153,15 +154,15 @@
                         <div class="calculator__item-title">
                             Сколько денег нужно?
                         </div>
-                        <input type="text" value="50 000">
-                        <input id="price">
+                        <input class="calculator__summ" type="text" value="50 000">
+                        <input type="range" id="price" min="10000" max="500000" value="50000" step="1000">
                     </div>
                     <div class="calculator__item">
                         <div class="calculator__item-title">
                             На какой срок берете?
                         </div>
-                        <input type="text" value="На 8 месяцев">
-                        <input id="term">
+                        <input class="calculator__term" type="text" value="На 8 дней">
+                        <input type="range" id="term" min="7" max="54.67" value="8" step="1">
                     </div>
                     <div class="calculator__item">
                         <div class="calculator__item-title">
@@ -174,30 +175,30 @@
                             <label><input type="radio" name="r" value="4">Яндекс.Деньги</label>
                             <label><input type="radio" name="r" value="5">Банковский счет</label>
                             <label><input type="radio" name="r" value="6">Банковский перевод</label>
-                        </div>
+                        </div>                        
                         <div class="calculator__item-summ">
                             <div class="calculator__item-summ-box">
                                 <div class="calculator__item-title">
                                     Вы берете:
                                 </div>
-                                <div class="calculator__item-summ-price">
-                                    50 000 ₽
+                                <div class="calculator__item-summ-price you-take">
+                                    1 000 000 ₽
                                 </div>
                             </div>
                             <div class="calculator__item-summ-box">
                                 <div class="calculator__item-title">
                                     Вы отдаете:
                                 </div>
-                                <div class="calculator__item-summ-price">
-                                    75 000 ₽
+                                <div class="calculator__item-summ-price you-give">
+                                    1 500 000 ₽
                                 </div>
                             </div>
                             <div class="calculator__item-summ-box">
                                 <div class="calculator__item-title">
                                     Комиссия:
                                 </div>
-                                <div class="calculator__item-summ-price">
-                                    25 000 ₽
+                                <div class="calculator__item-summ-price your-commission">
+                                    500 000 ₽
                                 </div>
                             </div>
                         </div>
@@ -1678,7 +1679,7 @@
                         </div>
                     </div>
                     <div class="reviews__btn">
-                        <a class="link" href="#" id="dbtn">
+                        <a class="link" href="#">
                             Прочитать все отзывы
                         </a>
                     </div>
@@ -1729,7 +1730,6 @@
 
 
 
-    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -1811,6 +1811,7 @@
             </div>
         </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/rangeslider.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>

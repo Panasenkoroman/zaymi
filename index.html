@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Все займы</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="js/rangeslider.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -145,15 +146,15 @@
                     <div class="calculator__item-title">
                         Сколько денег нужно?
                     </div>
-                    <input type="text" value="50 000">
-                    <input id="price">
+                    <input class="calculator__summ" type="text" value="50 000">
+                    <input type="range" id="price" min="10000" max="500000" value="50000" step="1000">
                 </div>
                 <div class="calculator__item">
                     <div class="calculator__item-title">
                         На какой срок берете?
                     </div>
-                    <input type="text" value="На 8 месяцев">
-                    <input id="term">
+                    <input class="calculator__term" type="text" value="На 8 дней">
+                    <input type="range" id="term" min="7" max="54.67" value="8" step="1">
                 </div>
                 <div class="calculator__item">
                     <div class="calculator__item-title">
@@ -172,7 +173,7 @@
                             <div class="calculator__item-title">
                                 Вы берете:
                             </div>
-                            <div class="calculator__item-summ-price">
+                            <div class="calculator__item-summ-price you-take">
                                 1 000 000 ₽
                             </div>
                         </div>
@@ -180,7 +181,7 @@
                             <div class="calculator__item-title">
                                 Вы отдаете:
                             </div>
-                            <div class="calculator__item-summ-price">
+                            <div class="calculator__item-summ-price you-give">
                                 1 500 000 ₽
                             </div>
                         </div>
@@ -188,7 +189,7 @@
                             <div class="calculator__item-title">
                                 Комиссия:
                             </div>
-                            <div class="calculator__item-summ-price">
+                            <div class="calculator__item-summ-price your-commission">
                                 500 000 ₽
                             </div>
                         </div>
@@ -199,7 +200,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="advantages">
@@ -602,7 +602,7 @@
                 </div>
             </div>
             <div class="popular-loans-btn">
-                <a href="#" class="link" id="bbtn">
+                <a href="#" class="link">
                     Все займы
                 </a>
             </div>
@@ -1138,6 +1138,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/rangeslider.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
